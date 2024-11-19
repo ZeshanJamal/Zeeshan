@@ -4,39 +4,43 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Portfolio</title>
+    <script src="nn.js"></script>
+    <link rel="stylesheet" href="nn.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lora:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body class="bg-body-secondary">
-    <section id="about" class="container-fluid mb-3" style="background-image: url('my.jpg'); background-size: cover; background-position: center 75%; height: 100vh;">
-        <nav class="navbar navbar-expand-lg navbar-light bg-bottom fixed-top" style="font-family: 'Times New Roman', Times, serif; font-weight: bold;">
-            <div class="container" style="max-width: 400px;">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent" style="background-color:rgba(0, 0, 0, 0.5);">
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white" href="#about">About Me</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white" href="#skills">Skills</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white" href="#Projects">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white" href="#footer">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-      <div class="row ms-auto justify-content-start align-items-center animate__animated animate__fadeIn animate__delay-1s" style="height: 100vh;">
-        <div class="col-md-4 text-center " style="background-color: rgba(0,0, 0, 0.7); border-radius: 10px;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-bottom fixed-top" style="font-family: 'Times New Roman', Times, serif; font-weight: bold; justify-content: end;">
+        <div class="container-fluid" style="max-width: 400px;">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-3" id="navibar" style="font-family: 'Playfair Display', serif; color: #f8f9fa;">
+              <li class="nav-item ms-1">
+                <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item ms-1">
+                <a class="nav-link text-white" href="#about">About</a>
+              </li>
+              <li class="nav-item ms-1">
+                <a class="nav-link text-white" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item ms-1">
+                <a class="nav-link text-white" href="#Projects">Projects</a>
+              </li>
+              <li class="nav-item ms-1">
+                <a class="nav-link text-white" href="#footer">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      </nav>
+    <section id="about" class="container-fluid mb-3  " style="background-image: url('my.jpg'); background-size: cover; background-position: center 75%; height: 100vh;">
+      <div class="row ms-auto  justify-content-start align-items-center animate__animated animate__fadeIn animate__delay-1s" style="height: 100vh;">
+        <div class="col-md-4 text-center custom-hover-effect " id="aboutme" >
           <h2 class="text-white mb-1 mb-lg-2 mb-4 mt-1 animate__animated animate__slideInLeft animate__delay-1s" style="font-family: 'Times New Roman', Times, serif;">About Me</h2>
           <p class="text-white animate__animated animate__fadeIn animate__delay-2s" style="font-family: 'Times New Roman', Times, serif; background-position: center 75%;">
             Hello! I am a student at <a href="https://bzu.edu.pk/" class="text-white">BZU</a> (Bahauddin Zakariya University) currently pursuing my BSCS (Bachelor of Science in Computer Science). I am passionate about exploring the world of technology and its endless possibilities. My academic journey has helped me develop a strong foundation in computer science, and I am particularly interested in fields like Data Science, Machine Learning, and Artificial Intelligence.
@@ -44,29 +48,29 @@
         </div>
       </div>
     </section>
-    <section id="skills" class="container ">
+    <section id="skills" class="container-fluid">
       <div class="row ">
         <div class="conitaner justify-content-center mt-5 ">
           <h1 class=" text-dark ms-auto" style="font-family: 'Times New Roman', Times, serif;">Skills</h1>
         </div>
-        <div class="col-12 col-md-6">
-          <div class="card mb-5 mt-3">
+        <div class="col-12 col-md-6 ">
+          <div class="card mb-3 mt-3 custom-hover-effect" style="height: 150px;">
             <div class="card-header bg-dark text-white">Java Script</div>
             <div class="card-body">
-              <div class="card-title"><img src="logo-javascript.svg" alt="js-logo" width="30px" height="30px"></div>
+              <div class="card-title mb-3"><img src="logo-javascript.svg" alt="js-logo" width="40px"></div>
               <div class="progress">
-                <div class="progress-bar" style="width: 60%;">60%</div>
+                <div class="progress-bar" style="width: 60%;"></div>
               </div>
             </div>
           </div>
         </div>
         <div class="col-12 col-md-6">
-          <div class="card mb-5 mt-3 ">
+          <div class="card mb-3 mt-3 custom-hover-effect" style="height: 150px;">
             <div class="card-header bg-dark text-white">Python</div>
             <div class="card-body">
-              <div class="card-title"><img src="logo-python.svg" alt="python-logo" width="30px" height="30px"></div>
+              <div class="card-title mb-3"><img src="logo-python.svg" alt="python-logo" width="40px"></div>
               <div class="progress">
-                <div class="progress-bar" style="width: 65%;">65%</div>
+                <div class="progress-bar" style="width: 65%;"></div>
               </div>
             </div>
           </div>
@@ -74,23 +78,23 @@
       </div>
       <div class="row">
         <div class="col-12 col-md-6">
-          <div class="card mb-5 mt-3">
+          <div class="card mb-3 mt-3 custom-hover-effect" style="height: 150px;">
             <div class="card-header bg-dark text-white">HMTL</div>
             <div class="card-body">
-              <div class="card-title"><img src="logo-html5.svg" alt="html-logo" width="30px" height="30px"></div>
+              <div class="card-title mb-3"><img src="logo-html5.svg" alt="html-logo" width="40px"></div>
               <div class="progress">
-                <div class="progress-bar" style="width: 70%;">70%</div>
+                <div class="progress-bar" style="width: 70%;"></div>
               </div>
             </div>
           </div>
         </div>
         <div class="col-12 col-md-6">
-          <div class="card mb-5 mt-3">
+          <div class="card mb-3 mt-3 custom-hover-effect" style="height: 150px;">
             <div class="card-header bg-dark text-white">CSS</div>
             <div class="card-body">
-              <div class="card-title"><img src="logo-css3.svg" alt="css-logo" width="30px" height="30px"></div>
+              <div class="card-title mb-3"><img src="logo-css3.svg" alt="css-logo" width="40px"></div>
               <div class="progress">
-                <div class="progress-bar" style="width: 50%;">50%</div>
+                <div class="progress-bar" style="width: 50%;"></div>
               </div>
             </div>
           </div>
@@ -105,9 +109,9 @@
         </div>
         <div class="row justify-content-start">
           <div class="col-md-4">
-            <div class="card shadow-sm mb-2">
+            <div class="card shadow-sm mb-2 custom-hover-effect">
               <img src="P1.jpg" class="card-img-top" alt="Sample Image">
-              <div class="card-body text-center">
+              <div class="card-body text-center ">
                 <h5 class="card-title">Project 1</h5>
                 <p class="card-text">I have made my portfolio as a Project</p>
                 <a href="#" class="btn btn-primary">Learn More</a>
@@ -115,7 +119,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card shadow-sm mb-2">
+            <div class="card shadow-sm mb-2 custom-hover-effect">
               <img src="P2.jpg" class="card-img-top" alt="Sample Image">
               <div class="card-body text-center">
                 <h5 class="card-title">Project 2</h5>
@@ -125,7 +129,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card shadow-sm">
+            <div class="card shadow-sm custom-hover-effect">
               <img src="P3.jpg" class="card-img-top" alt="Sample Image">
               <div class="card-body text-center">
                 <h5 class="card-title">Project 3</h5>
@@ -138,39 +142,56 @@
       </div>
     </div>
     </section>
-    <section id="Contact">
-      <div class="conitaner mt-5">
-        <div class="row">
-            <form class="w-50 mx-auto needs-validation">
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                  <div class="invalid-feedback">
-                    Please enter valid email.
-                  </div>
+    <section id="Contact" class="bg-light mt-3">
+        <h1 class="text-center text-dark mt-3" style="font-family: 'Times New Roman', Times, serif;">Contact Me</h1>
+        <div class="container mt-5 justify-content-start">
+          <div class="row">
+            <form class="w-50 mx-auto needs-validation" novalidate>
+              <!-- Email Address -->
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                <div class="invalid-feedback">
+                  Please enter a valid email.
                 </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Name</label>
-                  <input type="text" required class="form-control" id="exampleInputPassword1">
+              </div>
+      
+              <!-- Name -->
+              <div class="mb-3">
+                <label for="exampleInputName" class="form-label">Name</label>
+                <input type="text" required class="form-control" id="exampleInputName">
+                <div class="invalid-feedback">
+                  Please enter your name.
                 </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Phone Number</label>
-                  <input type="number" required class="form-control" id="exampleInputPassword1">
-                  <div class="invalid-feedback">
-                    Please provide a valid Number.
-                  </div>
+              </div>
+      
+              <!-- Phone Number -->
+              <div class="mb-3">
+                <label for="exampleInputPhone" class="form-label">Phone Number</label>
+                <input type="number" required class="form-control" id="exampleInputPhone">
+                <div class="invalid-feedback">
+                  Please provide a valid phone number.
                 </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label"> Message</label>
-                  <input type="text" required class="form-control" id="exampleInputPassword1">
+              </div>
+      
+              <!-- Message -->
+              <div class="mb-3">
+                <label for="exampleInputMessage" class="form-label">Message</label>
+                <textarea required class="form-control" id="exampleInputMessage" rows="4" placeholder="Enter your message here"></textarea>
+                <div class="invalid-feedback">
+                  Please enter a message.
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
+              </div>
+      
+              <button type="submit" class="btn btn-primary mb-5">Submit</button>
+            </form>
+          </div>
         </div>
-      </div>
-    </section>
-    <footer class="bg-body-tertiary text-light text-center py-3 mt-5" id="footer">
+      </section>
+      
+    <footer class="bg-body-tertiary text-light text-center py-3 mt-3" id="footer">
+        <p class="text-dark ms-2">Connect with me on</p>
       <a href="https://www.facebook.com/zeeshan.jamal.77/" class="ms-3">
         <img src="logo-facebook.svg" alt="FB-LOGO" width="30px" height="30px">
       </a>
