@@ -22,29 +22,59 @@
     transition: background-color 0.3s ease, transform 0.4s ease, box-shadow 0.3s ease;
   }
   #navibar:hover{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 10);
   }
   .navbar-nav .nav-link {
     transition: background-color 0.3s, color 0.3s, padding 0.3s;
   }
-
-  /* Adding button-like effect when scrolling */
-  .navbar.scrolled .nav-link {
-    background-color: #333;
-    color: white;
-    border-radius: 5px;
-    padding: 10px 20px;
+  /* General styles for the navbar */
+.navbar {
+  padding: 0.5rem 1rem;
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  color: #343a40; /* Dark text color */
+}
+#navibar {
+  padding: 0.5rem 0.5rem;
+  border-radius: 8px;
+  background-color: whitesmoke;
+}
+#navibar .nav-item {
+  margin-left: 1rem;
+}
+#navibar .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem;
+}
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  #navibar {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
   }
 
-  /* Adding button-like effect to nav links when scroll is detected */
-  .navbar-nav .scrolled-link {
-    background-color: #333;
-    color: white;
-    border-radius: 5px;
-    padding: 10px 20px;
+  #navibar .nav-item {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
   }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
 
-  /* Adding background color to navbar when scrolled */
-  .navbar.scrolled {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
